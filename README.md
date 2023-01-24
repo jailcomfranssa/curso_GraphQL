@@ -1,4 +1,4 @@
-# curso_GraphQL
+# Curso GraphQL
 
 <h4 align="center"> 
 	🚧 Curso GraphQL  🚀 Em construção...  🚧
