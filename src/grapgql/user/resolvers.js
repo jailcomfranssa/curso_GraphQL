@@ -1,16 +1,11 @@
-const user = () => {
-  return {
-    id: '1',
-    userName: 'Jailson',
-  };
+const user = async (_, __, { fetch }) => {
+  const user = await fetch('http://localhost:3000/users/602');
+  return user.json();
 };
 
-const users = () => {
-  return [
-    { id: '1', userName: 'Jailson' },
-    { id: '2', userName: 'Jailson' },
-    { id: '3', userName: 'Jailson' },
-  ];
+const users = async (_, __, { fetch }) => {
+  const users = await fetch('http://localhost:3000/users');
+  return users.json();
 };
 
 export const userResolvers = {
